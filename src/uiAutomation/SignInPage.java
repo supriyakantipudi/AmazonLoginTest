@@ -132,17 +132,6 @@ public class SignInPage {
 		FileUtils.copyFile(SrcFile, DestFile);
 
 	}
-	
-	private String dateTimeStamp() {
-		// Create object of SimpleDateFormat class and decide the format
-				 DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
-				 //get current date time with Date()
-				 Date date = new Date();
-				 // Now format the date
-				  String formattedDate= dateFormat.format(date);
-				  return formattedDate;
-
-	}
 
 	@AfterMethod
 	public void tearDown() {
